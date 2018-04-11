@@ -1,0 +1,11 @@
+TYPO3:
+  CMS:
+    Form:
+      persistenceManager:
+        allowSaveToExtensionPaths: true
+        allowedExtensionPaths:
+          10: EXT:sitepackage/Configuration/Yaml/Extensions/Form/Forms/
+      prototypes:
+        contact:
+          __inheritances:
+          10: 'TYPO3.CMS.Form.prototypes.standard'

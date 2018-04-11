@@ -1,0 +1,11 @@
+plugin.tx_form {
+    settings {
+        yamlConfigurations.40 = EXT:sitepackage/Configuration/Yaml/Extensions/Form/BaseSetup.yaml
+    }
+}
+
+module.tx_form {
+    settings {
+        yamlConfigurations.40 = EXT:sitepackage/Configuration/Yaml/Extensions/Form/BaseSetup.yaml
+    }
+}

@@ -1,0 +1,26 @@
+mod.web_layout.BackendLayouts {
+  twoColumn {
+    title = Two Column
+    #icon = EXT:example_extension/Resources/Public/Images/BackendLayouts/default.gif
+    config {
+      backend_layout {
+        colCount = 2
+        rowCount = 1
+        rows {
+          1 {
+            columns {
+              1 {
+                name = Left
+                colPos = 0
+              }
+              2 {
+                name = Right
+                colPos = 1
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,96 @@
+
+renderingOptions:
+  submitButtonLabel: Submit
+type: Form
+identifier: contact
+label: Contact
+prototypeName: standard
+finishers:
+  -
+    options:
+      subject: 'Contact form'
+      recipientAddress: vodyanik.artur@gmail.com
+      recipientName: Vodyanik
+      senderAddress: '{text-2}'
+      senderName: '{text-1}'
+      replyToAddress: ''
+      carbonCopyAddress: ''
+      blindCarbonCopyAddress: ''
+      format: html
+      attachUploads: true
+    identifier: EmailToSender
+  -
+    options:
+      subject: Subject
+      recipientAddress: vodyanik.artur@gmail.com
+      recipientName: vodyanik
+      senderAddress: '{text-2}'
+      senderName: ''
+      replyToAddress: ''
+      carbonCopyAddress: ''
+      blindCarbonCopyAddress: ''
+      format: html
+      attachUploads: true
+      translation:
+        language: ''
+    identifier: EmailToReceiver
+renderables:
+  -
+    renderingOptions:
+      previousButtonLabel: ''
+      nextButtonLabel: ''
+    type: Page
+    identifier: page-1
+    label: ''
+    renderables:
+      -
+        type: GridRow
+        identifier: gridrow-1
+        label: 'Grid: Row'
+        renderables:
+          -
+            defaultValue: ''
+            type: Text
+            identifier: text-1
+            label: Text
+            properties:
+              fluidAdditionalAttributes:
+                required: required
+                minlength: '3'
+                maxlength: '20'
+              gridColumnClassAutoConfiguration:
+                viewPorts:
+                  lg:
+                    numbersOfColumnsToUse: '0'
+            validators:
+              -
+                identifier: NotEmpty
+              -
+                options:
+                  minimum: '3'
+                  maximum: '20'
+                identifier: StringLength
+          -
+            defaultValue: ''
+            type: Text
+            identifier: text-2
+            label: Text
+            properties:
+              fluidAdditionalAttributes:
+                required: required
+            validators:
+              -
+                identifier: NotEmpty
+              -
+                identifier: EmailAddress
+      -
+        defaultValue: ''
+        type: Textarea
+        identifier: textarea-1
+        label: Textarea
+        properties:
+          fluidAdditionalAttributes:
+            required: required
+        validators:
+          -
+            identifier: NotEmpty

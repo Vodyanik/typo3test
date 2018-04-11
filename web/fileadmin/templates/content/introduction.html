@@ -1,0 +1,21 @@
+<!-- One -->
+<section id="one">
+    <header class="major">
+        <h2>
+            <f:if condition="{data.header}">{data.header}</f:if>
+        </h2>
+    </header>
+    <p>
+        <f:if condition="{data.bodytext}">
+            <f:format.html>{data.bodytext}</f:format.html><br />
+        </f:if>
+    </p>
+    <ul class="actions">
+        <li>
+            <f:if condition="{data.header_link}">
+                <f:link.typolink parameter="{data.header_link}" class="button">Learn more</f:link.typolink><br />
+            </f:if>
+        </li>
+    </ul>
+</section>
+

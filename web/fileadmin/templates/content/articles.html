@@ -1,0 +1,40 @@
+<!--Two-->
+<section id="two">
+  <h2>
+    <f:if condition="{data.header}">
+      {data.header}
+    </f:if>
+  </h2>
+  <div class="row">
+    <f:if condition="{data.tx_mask_article}">
+        <f:for each="{data.tx_mask_article}" as="data_item">
+                <f:if condition="{data_item.tx_mask_article_img}">
+                  <f:for each="{data_item.tx_mask_article_img}" as="file">
+                    <article class="6u 12u$(xsmall) work-item">
+                      <a class="image fit thumb" style="cursor: pointer; outline: 0px;">
+                        <f:image image="{file}" alt="{file.alternative}" title="{file.title}" />
+                      </a>
+                      <h3>
+                        <f:if condition="{data_item.tx_mask_article_sub_header}">
+                          {data_item.tx_mask_article_sub_header}<br />
+                        </f:if>
+                      </h3>
+                      <p>
+                        <f:if condition="{data_item.tx_mask_article_text}">
+                          <f:format.nl2br>{data_item.tx_mask_article_text}</f:format.nl2br><br />
+                        </f:if>
+                      </p>
+                    </article>
+                  </f:for>
+                </f:if>
+        </f:for>
+    </f:if>
+  </div>
+  <ul class="actions">
+    <li>
+      <f:if condition="{data.header_link}">
+        <f:link.typolink parameter="{data.header_link}" class="button">Full portfolio</f:link.typolink><br />
+      </f:if>
+    </li>
+  </ul>
+</section>

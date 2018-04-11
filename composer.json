@@ -1,0 +1,26 @@
+{
+    "repositories": [
+        { "type": "vcs", "url": "https://github.com/FriendsOfTYPO3/extension_builder.git" },
+        { "type": "composer", "url": "https://composer.typo3.org/" },
+        { "type": "path", "url": "packages/*/" }
+    ],
+    "name": "typo3/typo3-version8-init",
+    "license": "GPL-2.0+",
+    "require": {
+        "roave/security-advisories": "dev-master",
+        "typo3/cms": "^8.7",
+        "dmitryd/typo3-realurl": "^2.2",
+        "nl/sitepackage": "^1.0"
+    },
+    "require-dev" : {
+        "mask/mask": "^3.0",
+        "cpsit/mask-export": "^0.9.1",
+        "friendsoftypo3/extension-builder": "dev-master"
+    },
+    "extra": {
+        "typo3/cms": {
+            "cms-package-dir": "{$vendor-dir}/typo3/cms",
+            "web-dir": "web"
+        }
+    }
+}

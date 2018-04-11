@@ -1,0 +1,7 @@
+vendor/*
+composer.lock
+web/fileadmin/_processed_/*
+.idea/*
+web/typo3
+web/index.php
+web/typo3conf/ext/*

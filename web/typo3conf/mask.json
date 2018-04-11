@@ -1,0 +1,471 @@
+{
+    "tt_content": {
+        "elements": {
+            "articles": {
+                "label": "Articles",
+                "key": "articles",
+                "shortLabel": "",
+                "description": "",
+                "icon": "",
+                "color": "#000000",
+                "columns": {
+                    "0": "header",
+                    "1": "tx_mask_article",
+                    "5": "header_link"
+                },
+                "labels": {
+                    "0": "",
+                    "1": "",
+                    "5": ""
+                }
+            },
+            "avatar": {
+                "label": "Avatar",
+                "key": "avatar",
+                "shortLabel": "",
+                "description": "",
+                "icon": "",
+                "color": "#000000",
+                "columns": [
+                    "image",
+                    "bodytext"
+                ],
+                "labels": [
+                    "",
+                    ""
+                ],
+                "options": {
+                    "1": "rte"
+                }
+            },
+            "contactmask": {
+                "label": "Contact Mask",
+                "key": "contactmask",
+                "shortLabel": "",
+                "description": "",
+                "icon": "",
+                "color": "#000000",
+                "columns": [
+                    "header",
+                    "bodytext",
+                    "tx_mask_contact",
+                    "tx_mask_bodytext2",
+                    "tx_mask_bodytext3",
+                    "tx_mask_contactemail"
+                ],
+                "labels": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            "introduction": {
+                "label": "Introduction",
+                "key": "introduction",
+                "shortLabel": "",
+                "description": "",
+                "icon": "",
+                "color": "#000000",
+                "columns": [
+                    "header",
+                    "bodytext",
+                    "header_link"
+                ],
+                "labels": [
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            "socials": {
+                "label": "Socials",
+                "key": "socials",
+                "shortLabel": "",
+                "description": "",
+                "icon": "",
+                "color": "#000000",
+                "labels": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "columns": [
+                    "tx_mask_twitter",
+                    "tx_mask_github",
+                    "tx_mask_busket",
+                    "tx_mask_email"
+                ]
+            }
+        },
+        "sql": {
+            "tx_mask_twitter": {
+                "tt_content": {
+                    "tx_mask_twitter": "tinytext"
+                }
+            },
+            "tx_mask_github": {
+                "tt_content": {
+                    "tx_mask_github": "tinytext"
+                }
+            },
+            "tx_mask_busket": {
+                "tt_content": {
+                    "tx_mask_busket": "tinytext"
+                }
+            },
+            "tx_mask_email": {
+                "tt_content": {
+                    "tx_mask_email": "tinytext"
+                }
+            },
+            "tx_mask_article": {
+                "tt_content": {
+                    "tx_mask_article": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            },
+            "tx_mask_contact": {
+                "tt_content": {
+                    "tx_mask_contact": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            },
+            "tx_mask_bodytext2": {
+                "tt_content": {
+                    "tx_mask_bodytext2": "text"
+                }
+            },
+            "tx_mask_bodytext3": {
+                "tt_content": {
+                    "tx_mask_bodytext3": "text"
+                }
+            },
+            "tx_mask_contactemail": {
+                "tt_content": {
+                    "tx_mask_contactemail": "tinytext"
+                }
+            }
+        },
+        "tca": {
+            "tx_mask_twitter": {
+                "config": {
+                    "type": "input",
+                    "renderType": "inputLink",
+                    "softref": "typolink",
+                    "fieldControl": {
+                        "linkPopup": {
+                            "options": {
+                                "title": "Link",
+                                "windowOpenParameters": "height=300,width=500,status=0,menubar=0,scrollbars=1",
+                                "blindLinkOptions": ""
+                            }
+                        }
+                    },
+                    "wizards": {
+                        "link": {
+                            "icon": "actions-wizard-link",
+                            "params": {
+                                "allowedExtensions": ""
+                            }
+                        }
+                    },
+                    "eval": "",
+                    "default": "",
+                    "placeholder": "",
+                    "size": ""
+                },
+                "exclude": "1",
+                "key": "twitter"
+            },
+            "tx_mask_github": {
+                "config": {
+                    "type": "input",
+                    "renderType": "inputLink",
+                    "softref": "typolink",
+                    "fieldControl": {
+                        "linkPopup": {
+                            "options": {
+                                "title": "Link",
+                                "windowOpenParameters": "height=300,width=500,status=0,menubar=0,scrollbars=1",
+                                "blindLinkOptions": ""
+                            }
+                        }
+                    },
+                    "wizards": {
+                        "link": {
+                            "icon": "actions-wizard-link",
+                            "params": {
+                                "allowedExtensions": ""
+                            }
+                        }
+                    },
+                    "eval": "",
+                    "default": "",
+                    "placeholder": "",
+                    "size": ""
+                },
+                "exclude": "1",
+                "key": "github"
+            },
+            "tx_mask_busket": {
+                "config": {
+                    "type": "input",
+                    "renderType": "inputLink",
+                    "softref": "typolink",
+                    "fieldControl": {
+                        "linkPopup": {
+                            "options": {
+                                "title": "Link",
+                                "windowOpenParameters": "height=300,width=500,status=0,menubar=0,scrollbars=1",
+                                "blindLinkOptions": ""
+                            }
+                        }
+                    },
+                    "wizards": {
+                        "link": {
+                            "icon": "actions-wizard-link",
+                            "params": {
+                                "allowedExtensions": ""
+                            }
+                        }
+                    },
+                    "eval": "",
+                    "default": "",
+                    "placeholder": "",
+                    "size": ""
+                },
+                "exclude": "1",
+                "key": "busket"
+            },
+            "tx_mask_email": {
+                "config": {
+                    "type": "input",
+                    "renderType": "inputLink",
+                    "softref": "typolink",
+                    "fieldControl": {
+                        "linkPopup": {
+                            "options": {
+                                "title": "Link",
+                                "windowOpenParameters": "height=300,width=500,status=0,menubar=0,scrollbars=1",
+                                "blindLinkOptions": ""
+                            }
+                        }
+                    },
+                    "wizards": {
+                        "link": {
+                            "icon": "actions-wizard-link",
+                            "params": {
+                                "allowedExtensions": ""
+                            }
+                        }
+                    },
+                    "eval": "",
+                    "default": "",
+                    "placeholder": "",
+                    "size": ""
+                },
+                "exclude": "1",
+                "key": "email"
+            },
+            "tx_mask_article": {
+                "config": {
+                    "type": "inline",
+                    "foreign_table": "--inlinetable--",
+                    "foreign_field": "parentid",
+                    "foreign_table_field": "parenttable",
+                    "foreign_sortby": "sorting",
+                    "appearance": {
+                        "enabledControls": {
+                            "dragdrop": "1"
+                        },
+                        "newRecordLinkTitle": "",
+                        "levelLinksPosition": "top"
+                    },
+                    "minitems": "",
+                    "maxitems": ""
+                },
+                "exclude": "1",
+                "inlineLabel": "",
+                "inlineIcon": "",
+                "l10n_mode": "copy",
+                "key": "article"
+            },
+            "tx_mask_contact": {
+                "config": {
+                    "type": "inline",
+                    "foreign_table": "tt_content",
+                    "overrideChildTca": {
+                        "columns": {
+                            "colPos": {
+                                "config": {
+                                    "default": "999"
+                                }
+                            }
+                        }
+                    },
+                    "foreign_sortby": "sorting",
+                    "appearance": {
+                        "collapseAll": "1",
+                        "levelLinksPosition": "top",
+                        "showSynchronizationLink": "1",
+                        "showPossibleLocalizationRecords": "1",
+                        "showAllLocalizationLink": "1",
+                        "useSortable": "1",
+                        "enabledControls": {
+                            "dragdrop": "1"
+                        },
+                        "newRecordLinkTitle": ""
+                    },
+                    "minitems": "",
+                    "maxitems": ""
+                },
+                "exclude": "1",
+                "cTypes": [
+                    "form_formframework"
+                ],
+                "l10n_mode": "copy",
+                "key": "contact"
+            },
+            "tx_mask_bodytext2": {
+                "config": {
+                    "type": "text",
+                    "eval": "",
+                    "cols": "",
+                    "rows": "",
+                    "default": "",
+                    "placeholder": "",
+                    "max": "",
+                    "format": ""
+                },
+                "exclude": "1",
+                "key": "bodytext2"
+            },
+            "tx_mask_bodytext3": {
+                "config": {
+                    "type": "text",
+                    "eval": "",
+                    "cols": "",
+                    "rows": "",
+                    "default": "",
+                    "placeholder": "",
+                    "max": "",
+                    "format": ""
+                },
+                "exclude": "1",
+                "key": "bodytext3"
+            },
+            "tx_mask_contactemail": {
+                "config": {
+                    "type": "input",
+                    "renderType": "inputLink",
+                    "softref": "typolink",
+                    "fieldControl": {
+                        "linkPopup": {
+                            "options": {
+                                "title": "Link",
+                                "windowOpenParameters": "height=300,width=500,status=0,menubar=0,scrollbars=1",
+                                "blindLinkOptions": ""
+                            }
+                        }
+                    },
+                    "wizards": {
+                        "link": {
+                            "icon": "actions-wizard-link",
+                            "params": {
+                                "allowedExtensions": ""
+                            }
+                        }
+                    },
+                    "eval": "",
+                    "default": "",
+                    "placeholder": "",
+                    "size": ""
+                },
+                "exclude": "1",
+                "key": "contactemail"
+            }
+        }
+    },
+    "sys_file_reference": {
+        "sql": {
+            "tx_mask_article_img": {
+                "sys_file_reference": {
+                    "tx_mask_article_img": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            }
+        }
+    },
+    "tx_mask_article": {
+        "sql": {
+            "tx_mask_article_img": {
+                "tx_mask_article": {
+                    "tx_mask_article_img": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            },
+            "tx_mask_article_sub_header": {
+                "tx_mask_article": {
+                    "tx_mask_article_sub_header": "tinytext"
+                }
+            },
+            "tx_mask_article_text": {
+                "tx_mask_article": {
+                    "tx_mask_article_text": "text"
+                }
+            }
+        },
+        "tca": {
+            "tx_mask_article_img": {
+                "exclude": "1",
+                "options": "file",
+                "l10n_mode": "copy",
+                "config": {
+                    "minitems": "",
+                    "maxitems": "",
+                    "filter": [
+                        {
+                            "parameters": {
+                                "allowedFileExtensions": ""
+                            }
+                        }
+                    ]
+                },
+                "inlineParent": "tx_mask_article",
+                "label": "",
+                "key": "article_img"
+            },
+            "tx_mask_article_sub_header": {
+                "config": {
+                    "type": "input",
+                    "eval": "",
+                    "default": "",
+                    "placeholder": "",
+                    "size": "",
+                    "max": "",
+                    "is_in": ""
+                },
+                "exclude": "1",
+                "inlineParent": "tx_mask_article",
+                "label": "",
+                "key": "article_sub_header"
+            },
+            "tx_mask_article_text": {
+                "config": {
+                    "type": "text",
+                    "eval": "",
+                    "cols": "",
+                    "rows": "",
+                    "default": "",
+                    "placeholder": "",
+                    "max": "",
+                    "format": ""
+                },
+                "exclude": "1",
+                "inlineParent": "tx_mask_article",
+                "label": "",
+                "key": "article_text"
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+<div class="inner">
+  <a href="#" class="image avatar">
+  <f:if condition="{data.image}">
+    <f:for each="{data.image}" as="file">
+        <f:image image="{file}" alt="{file.alternative}" title="{file.title}" width="200" />
+    </f:for>
+  </f:if>
+  </a>
+  <f:if condition="{data.bodytext}">
+    <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data.bodytext}</f:format.html><br />
+  </f:if>
+</div>
+
+
